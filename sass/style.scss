@@ -118,8 +118,9 @@ header {
 }
 
 
-.section-title {
+.section-services {
 	height: 75vh;
+	padding-bottom: 20px;
 }
 
 h3 {
@@ -139,7 +140,7 @@ h3 {
 	color: #909090;
 }
 
-.section-title .row {
+.section-services .row {
 	margin-right: 100px;
 	margin-left: 100px;
 }
@@ -159,7 +160,7 @@ h3 {
 	text-align: center;
 }
 
-.services-subtitles {
+.subtitles {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: bold;
@@ -175,4 +176,15 @@ h3 {
 	color: #909090;
 	text-align: center;
 	padding: 0;
+}
+
+.section-portfolio {
+	height: 200vh;
+	background-color: #eee;
+	padding-top: 20px;
+}
+
+.section-portfolio .row {
+	margin-right: 100px;
+	margin-left: 100px;
 }
