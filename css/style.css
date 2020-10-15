@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* Grid daje Ci możliwość korzystania ze stylów Bootstrapa
+dla klas:
+container,
+container-fluid,
+row,
+kolumn (np. col-sm-, col-md-)
+oraz z offsetu
+ale nie zawiera innych komponentów ani klas pomocniczych. */
+/* złoty */
+/* szary */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  line-height: 1.7;
+}
+
+h1 {
+  color: #fff;
+  font-size: 55px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+h2 {
+  color: #fff;
+  font-size: 44px;
+  font-family: 'Times', serif;
+  font-style: italic;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+header {
+  background-color: #000;
+  background-image: url("../images/header_leo-cardelli_pexels.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.navigation {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0;
+}
+
+.brand-name {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.brand-name a {
+  text-decoration: none;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 24px;
+  color: #FFDF33;
+}
+
+.menu {
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.menu li {
+  list-style: none;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.col-7 {
+  margin-bottom: 30px;
+}
+
+.splash {
+  padding-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 230px;
+  padding: 16px;
+  border-radius: 3px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #FFDF33;
+  color: #fff;
+  background-color: #FFDF33;
+}
+/*# sourceMappingURL=style.css.map */
