@@ -34,6 +34,16 @@ h2 {
   margin-bottom: 0;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
 header {
   background-color: #000;
   background-image: url("../images/header_leo-cardelli_pexels.jpg");
@@ -45,7 +55,7 @@ header {
   position: relative;
 }
 
-.navigation {
+header .navigation {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -55,14 +65,14 @@ header {
   margin: 0;
 }
 
-.brand-name {
+header .brand-name {
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
 }
 
-.brand-name a {
+header .brand-name a {
   text-decoration: none;
   font-family: 'Grand Hotel', cursive;
   font-style: italic;
@@ -70,12 +80,12 @@ header {
   color: #FFDF33;
 }
 
-.menu {
+header .menu {
   padding-top: 20px;
   padding-right: 10px;
 }
 
-.menu li {
+header .menu li {
   list-style: none;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -85,7 +95,7 @@ header {
       justify-content: space-around;
 }
 
-.menu li a {
+header .menu li a {
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -94,15 +104,15 @@ header {
   padding: 0 10px;
 }
 
-.col-7 {
+header .col-7 {
   margin-bottom: 30px;
 }
 
-.splash {
+header .splash {
   padding-top: 30px;
 }
 
-.btn {
+header .btn {
   display: inline-block;
   min-width: 230px;
   padding: 16px;
@@ -124,34 +134,16 @@ header {
   padding-bottom: 20px;
 }
 
-h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 80px;
-  margin-bottom: 0px;
-}
-
-.section-description {
-  /* dla services i portforlio */
-  margin-top: 0px;
-  margin-bottom: 60px;
-  font-style: italic;
-  color: #909090;
-}
-
 .section-services .row {
   margin-right: 100px;
   margin-left: 100px;
 }
 
-.col-4 p {
+.section-services .col-4 p {
   margin-top: 10px;
 }
 
-.col-4 .fas {
+.section-services .col-4 .fas {
   border: solid 3px #FFDF33;
   border-radius: 50%;
   color: #FFDF33;
@@ -162,7 +154,23 @@ h3 {
   text-align: center;
 }
 
+.section-services .container {
+  font-size: 14px;
+  color: #909090;
+  text-align: center;
+  padding: 0;
+}
+
+.section-description {
+  /* dla services i portfolio */
+  margin-top: 0px;
+  margin-bottom: 60px;
+  font-style: italic;
+  color: #909090;
+}
+
 .subtitles {
+  /* dla services i portfolio */
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: bold;
@@ -173,17 +181,11 @@ h3 {
   margin-bottom: 0px;
 }
 
-.section-services .container {
-  font-size: 14px;
-  color: #909090;
-  text-align: center;
-  padding: 0;
-}
-
 .section-portfolio {
-  height: 200vh;
+  height: 225vh;
   background-color: #eee;
   padding-top: 20px;
+  margin-bottom: 50px;
 }
 
 .section-portfolio .row {
@@ -202,7 +204,6 @@ h3 {
 
 .section-portfolio .subtitles {
   margin: 0;
-  padding-top: 10px;
 }
 
 .section-portfolio .container {
@@ -213,9 +214,32 @@ h3 {
   padding: 0;
 }
 
-.img-description {
+.section-portfolio .img-description {
   background-color: #fff;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   /*	border: solid 1px red; */
+}
+
+footer {
+  margin: 30px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer i.fab {
+  background-color: #000;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
+
+footer span {
+  font-size: 0px;
 }
 /*# sourceMappingURL=style.css.map */
