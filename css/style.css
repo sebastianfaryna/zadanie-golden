@@ -7,8 +7,6 @@ row,
 kolumn (np. col-sm-, col-md-)
 oraz z offsetu
 ale nie zawiera innych komponentów ani klas pomocniczych. */
-/* złoty */
-/* szary */
 * {
   box-sizing: border-box;
 }
@@ -175,7 +173,7 @@ h3 {
   margin-bottom: 0px;
 }
 
-.container {
+.section-services .container {
   font-size: 14px;
   color: #909090;
   text-align: center;
@@ -191,5 +189,33 @@ h3 {
 .section-portfolio .row {
   margin-right: 100px;
   margin-left: 100px;
+  margin-bottom: 30px;
+}
+
+.section-portfolio .col-4 {
+  padding: 0 15px;
+}
+
+.section-portfolio img {
+  width: 100%;
+}
+
+.section-portfolio .subtitles {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.section-portfolio .container {
+  font-size: 14px;
+  font-style: italic;
+  color: #909090;
+  text-align: center;
+  padding: 0;
+}
+
+.img-description {
+  background-color: #fff;
+  padding-bottom: 30px;
+  /*	border: solid 1px red; */
 }
 /*# sourceMappingURL=style.css.map */
