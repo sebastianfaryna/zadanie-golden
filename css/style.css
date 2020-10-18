@@ -1,3 +1,6 @@
+/* VARIABLES */
+/*gold*/
+/* GLOBAL */
 * {
   box-sizing: border-box;
 }
@@ -22,17 +25,16 @@ h2 {
   font-family: 'Times', serif;
   font-style: italic;
   text-transform: capitalize;
-  margin-bottom: 0;
 }
 
 h3 {
   font-family: 'Montserrat', sans-serif;
   font-size: 38px;
   font-weight: bold;
+  font-style: normal;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 80px;
-  margin-bottom: 0px;
+  margin: 0;
 }
 
 header {
@@ -65,7 +67,7 @@ header .brand-name {
 
 header .brand-name a {
   text-decoration: none;
-  font-family: 'Grand Hotel', cursive;
+  font-family: "Grand Hotel", cursive;
   font-style: italic;
   font-size: 24px;
   color: #FFDF33;
@@ -100,7 +102,11 @@ header .col-7 {
 }
 
 header .splash {
-  padding-top: 30px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 header .btn {
@@ -120,21 +126,22 @@ header .btn {
   background-color: #FFDF33;
 }
 
-.section-services {
-  height: 75vh;
-  padding-bottom: 20px;
+section {
+  padding: 80px 0;
 }
 
-.section-services .row {
-  margin-right: 100px;
-  margin-left: 100px;
+.box {
+  /* font-size na zero, by */
+  font-size: 0;
+  /* usunac "biale znaki" */
 }
 
-.section-services .col-4 p {
+/* pomiedzy img i opisem */
+.section-services .col-lg-4 p {
   margin-top: 10px;
 }
 
-.section-services .col-4 .fas {
+.section-services .col-lg-4 .fas {
   border: solid 3px #FFDF33;
   border-radius: 50%;
   color: #FFDF33;
@@ -149,7 +156,6 @@ header .btn {
   font-size: 14px;
   color: #909090;
   text-align: center;
-  padding: 0;
 }
 
 .section-description {
@@ -173,20 +179,11 @@ header .btn {
 }
 
 .section-portfolio {
-  height: 225vh;
   background-color: #eee;
-  padding-top: 20px;
-  margin-bottom: 50px;
 }
 
-.section-portfolio .row {
-  margin-right: 100px;
-  margin-left: 100px;
+.section-portfolio .box {
   margin-bottom: 30px;
-}
-
-.section-portfolio .col-4 {
-  padding: 0 15px;
 }
 
 .section-portfolio img {
@@ -202,7 +199,6 @@ header .btn {
   font-style: italic;
   color: #909090;
   text-align: center;
-  padding: 0;
 }
 
 .section-portfolio .img-description {
@@ -227,11 +223,7 @@ footer p {
   font-family: 'Montserrat', sans-serif;
   font-size: 12px;
   color: #909090;
-  text-align: right;
-}
-
-footer .col-4 {
-  padding: 0;
+  text-align: center;
 }
 
 footer a {
@@ -250,5 +242,23 @@ footer i.fab {
 
 footer span {
   font-size: 0px;
+}
+
+@media all and (max-width: 768px) {
+  header .menu li a {
+    font-size: 10px;
+  }
+  header .menu ul {
+    padding: 0;
+  }
+  header .navigation .brand-name {
+    padding-top: 20px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  header .menu {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
