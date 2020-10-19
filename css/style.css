@@ -59,6 +59,7 @@ header .navigation {
 }
 
 header .brand-name {
+  padding-top: 20px;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
@@ -205,7 +206,6 @@ section {
   background-color: #fff;
   padding-bottom: 15px;
   padding-top: 15px;
-  /*	border: solid 1px red; */
 }
 
 footer {
@@ -244,20 +244,22 @@ footer span {
   font-size: 0px;
 }
 
-@media all and (max-width: 768px) {
-  header .menu li a {
-    font-size: 10px;
-  }
+@media all and (max-width: 991px) {
   header .menu ul {
     padding: 0;
   }
-  header .navigation .brand-name {
+}
+
+@media all and (min-width: 769px) and (max-width: 990px) {
+  .brand-name {
     padding-top: 20px;
   }
 }
 
-@media all and (max-width: 425px) {
-  header .menu {
+@media all and (min-width: 425px) and (max-width: 990px) {
+  header .menu ul {
+    -ms-flex-direction: column;
+        flex-direction: column;
     display: block;
   }
 }
